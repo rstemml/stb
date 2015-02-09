@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;"/>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+    <title>Status 404</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet"/>
+    <link href="css/layerslider.css" type="text/css" rel="stylesheet"/>
+    <link href="css/skin.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.BlackAndWhite.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/ajax-mail.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/accordion.settings.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <!--Le google fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/ie8.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
+</head>
+
+<body>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+        $('.bwWrapper').BlackAndWhite({
+            hoverEffect: true, // default true
+            // set the path to BnWWorker.js for a superfast implementation
+            webworkerPath: false,
+            // for the images with a fluid width and height
+            responsive: true,
+            // to invert the hover effect
+            invertHoverEffect: false,
+            speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                fadeIn: 200, // 200ms for fadeIn animations
+                fadeOut: 800 // 800ms for fadeOut animations
+            }
+        });
+    });
+</script>
+<div class="site-wrapper">
+    <header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="span3 logo">
+                <a href="./index.html">KLAUS<span>ZOLLNER</span></a>
+            </div>
+
+            <nav id="menu" class="pull-right">
+                <ul>
+                    <li ><a href="./index.html">Home</a></li>
+                    <li><a href="./404.html">Leistungen</a>                        
+                    </li>
+                    <li><a href="./team.html">TEAM</a>                        
+                    </li>                 
+                    <li><a href="./contact.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+</header>
+    <!--container-->
+    <section id="container">
+        <div class="breadcrumbs about">
+            <div class="container">
+                <h2>404 error</h2>
+                
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="span12 pull-center">
+                <h2>Oh no!... 404: Page not Found</h2>
+                <p>
+                    Sorry, but the page you are looking for has not been found.<br>
+                    Try checking the URL for errors, then hit the refresh button on your browser.
+                </p>
+                <div class="spacer"></div>
+                <p>
+                    <a href="./index.html" class="btn btn-large btn-welcome">Go to Home Page</a>
+                </p>
+            </div>
+        </div>
+    </div></section>
+
+    <!--footer menu-->
+    <section id="footer-menu">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <!--
+                    <ul>
+                        <li><i class="icon-twitter"></i></li>
+                        <li><i class="icon-facebook"></i></li>
+                        <li><i class="icon-pinterest"></i></li>
+                        <li><i class="icon-google-plus"></i></li>
+                        <li><i class="icon-linkedin"></i></li>
+                        <li><i class="icon-github"></i></li>
+                    </ul>
+                -->
+                </div>
+                <p class="span6"><span class="pull-right">Telefon: +49 3771 22690</span></p>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4 logo">
+                <!--
+                <a href="./index.html">REAL<span>PROS</span></a>
+                <p>Lorem ipsum dolor sit amet qui qunta negat omnia dat.</br>
+                    Seitan aliquip quis cardigan american apparel.</br>
+                    © Copyright 2013
+                </p>
+            -->
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

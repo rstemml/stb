@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="de"> <!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;"/>
+    <link rel="icon" href="img/zollner_logo.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+    <title>Home Page</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet"/>
+    <link href="css/layerslider.css" type="text/css" rel="stylesheet"/>
+    <link href="css/skin.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.BlackAndWhite.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/ajax-mail.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/accordion.settings.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <!--Le google fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/ie8.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
+</head>
+
+<body>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+        $('.bwWrapper').BlackAndWhite({
+            hoverEffect: true, // default true
+            // set the path to BnWWorker.js for a superfast implementation
+            webworkerPath: false,
+            // for the images with a fluid width and height
+            responsive: true,
+            // to invert the hover effect
+            invertHoverEffect: false,
+            speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                fadeIn: 200, // 200ms for fadeIn animations
+                fadeOut: 800 // 800ms for fadeOut animations
+            }
+        });
+    });
+</script>
+<div class="site-wrapper">
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="span3 logo">
+                <a href="./index.html">KLAUS<span>ZOLLNER</span></a>
+            </div>
+
+            <nav id="menu" class="pull-right">
+                <ul>
+                    <li class="current"><a href="./index.html">Home</a></li>
+                    <li><a href="./404.html">Leistungen</a>                        
+                    </li>
+                    <li><a href="./team.html">TEAM</a>                        
+                    </li>                 
+                    <li><a href="./contact.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+</header>
+<!--
+<section class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <p class="hidden-phone">STEUERBERATUNG
+                <span>
+                 Lorem ipsum dolor sit amet
+                </span>
+                </p>
+                <img src="example/slider1.jpg"/>
+            </li>
+            <li>
+                <p class="hidden-phone">BUCHHALTUNG
+                <span>
+                    Cras viverra posuere venenatis a blandit.
+                </span>
+                </p class="hidden-phone">
+                <img src="example/slider3.jpg"/>
+            </li>
+            <li>
+                <p class="hidden-phone">LOHNSTEUER</p>
+                <img src="example/slider2.jpg"/>
+            </li>
+        </ul>
+    </div>
+</section>
+
+-->
+<section id="container">
+    <div class="container">
+        <div class="divider"><h3><!--REAL<span>STEUERBÜRO ZOLLNER</span><!-- WEBSITE--></h3></div>
+        <div class="row highlights">
+            <div class="span3">
+                <div class="hl-icons">
+                    <img class="img-circle" src="images/ft1.png">
+                    <i class="icon-home"></i>
+                </div>
+                <h3>Steuerberatung</h3>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+
+                <p>
+            </div>
+            <div class="span3">
+                <div class="hl-icons">
+                    <img class="img-circle" src="images/ft2.png">
+                    <i class="icon-star"></i>
+                </div>
+                <h3>Lohnbuchhaltung</h3>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+
+                <p>
+            </div>
+            <div class="span3">
+                <div class="hl-icons">
+                    <img class="img-circle" src="images/ft3.png">
+                    <i class="icon-flag"></i>
+                </div>
+                <h3>Finanzbuchhaltung</h3>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+
+                <p>
+            </div>
+            <div class="span3">
+                <div class="hl-icons">
+                    <img class="img-circle" src="images/ft4.png">
+                    <i class="icon-fire"></i>
+                </div>
+                <h3>Affordable Price</h3>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+
+                <p>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="container">        
+            <div class="row">
+            <div class="span3">
+
+                <a class="thumbnail bwWrapper" href="#">
+                    <img alt="260x180" data-src="holder.js/260x180" style="width: 260px; height: 180px;"
+                         src="example/latest3.jpg">
+                   <span class="th-ribbon">
+                        <img src="images/image-ribbon.png">
+                    </span>
+
+                </a>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus. </p>
+
+                <a href="#" class="readmore">Read More</a>
+            </div>
+            <div class="span3">
+
+                <a class="thumbnail bwWrapper" href="#">
+                    <img alt="260x180" data-src="holder.js/260x180" style="width: 260px; height: 180px;"
+                         src="example/latest4.jpg">
+                </a>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus . </p>
+
+                <a href="#" class="readmore">Read More</a>
+
+            </div>
+            <div class="span3">
+
+                <a class="thumbnail bwWrapper" href="#">
+                    <img alt="260x180" data-src="holder.js/260x180" style="width: 260px; height: 180px;"
+                         src="example/latest5.jpg">
+                </a>
+
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+                <a href="#" class="readmore">Read More</a>
+            </div>
+            <div class="span3">
+
+                <a class="thumbnail bwWrapper" href="#">
+                    <img alt="260x180" data-src="holder.js/260x180" style="width: 260px; height: 180px;"
+                         src="example/latest6.jpg">
+                </a>
+
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+                <a href="#" class="readmore">Read More</a>
+            </div>
+        </div>-->
+        <hr class="invisible">
+        <div class="row">
+            <div class="span12">
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item testimonials active">
+                            <p>Sie wollen sich selbstständig machen? Sie haben bereits den Schritt in die Selbstständigkeit gewagt und benötigen Hilfe? Sie möchten Ihre Finanzbuchhaltung in kompetente Hände legen? Sie benötigen eine korrekte Lohn- oder Baulohnabrechnung?</p>
+
+                        </div>
+                        <div class="item testimonials">
+                            <p>Ihr Jahresabschluss nach Handels- und Steuerrecht muss erstellt werden? Sie brauchen eine Gewinnermittlung für Ihren Gewerbebetrieb oder als Freiberufler? Sie haben Vermietungseinkünfte, Einkünfte aus Kapitalvermögen oder sonstige Einkünfte, die einer qualifizierten Bearbeitung bedürfen?</p>
+
+                        </div>
+                        <div class="item testimonials">
+                            <p>Sie wollen Ihre Steuererklärungen für betriebliche und private Obliegenheiten schnell und zuverlässig erstellen lassen? Sie beabsichtigen, Ihre Unternehmensnachfolge sinnvoll vorzubereiten? Sie wollen die Erbfolge aktiv gestalten? Sie denken, dass Ihnen ein Steuerberater auch in anderen Fragen bezüglich betrieblicher und privater Belange ein nützlicher Gesprächspartner sein kann?</p>
+
+                        </div>
+                    </div>
+                    <a class="left carousel-control control-fix carousel-control-extra" href="#myCarousel"
+                       data-slide="prev">‹</a>
+                    <a class="right carousel-control carousel-control-extra" href="#myCarousel" data-slide="next">›</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+-->
+</section>
+<!--footer menu-->
+<section id="footer-menu">
+    <div class="container">
+        <div class="row">
+        
+            <div class="span6">
+                    <!--
+                <ul>
+                    <li><i class="icon-twitter"></i></li>
+                    <li><i class="icon-facebook"></i></li>
+                    <li><i class="icon-pinterest"></i></li>
+                    <li><i class="icon-google-plus"></i></li>
+                    <li><i class="icon-linkedin"></i></li>
+                    <li><i class="icon-github"></i></li>
+                </ul>
+                 -->
+            </div>
+       
+            <p class="span6"><span class="pull-right">Telefon: 03771/22690</span></p>
+        </div>
+    </div>
+</section>
+</div>
+<footer>
+    <!--
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4 logo">
+                <a href="./index.html">REAL<span>PROS</span></a>
+                <p>Lorem ipsum dolor sit amet qui qunta negat omnia dat.</br>
+                    Seitan aliquip quis cardigan american apparel.</br>
+                    © Copyright 2013
+                </p>
+            </div>
+        </div>
+    </div>
+-->
+</footer>
+</body>
+</html>

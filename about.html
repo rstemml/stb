@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;"/>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+    <title>Home Page</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet"/>
+    <link href="css/layerslider.css" type="text/css" rel="stylesheet"/>
+    <link href="css/skin.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.BlackAndWhite.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/ajax-mail.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/accordion.settings.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <!--Le google fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/ie8.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
+</head>
+
+<body>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+        $('.bwWrapper').BlackAndWhite({
+            hoverEffect: true, // default true
+            // set the path to BnWWorker.js for a superfast implementation
+            webworkerPath: false,
+            // for the images with a fluid width and height
+            responsive: true,
+            // to invert the hover effect
+            invertHoverEffect: false,
+            speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                fadeIn: 200, // 200ms for fadeIn animations
+                fadeOut: 800 // 800ms for fadeOut animations
+            }
+        });
+    });
+</script>
+<div class="site-wrapper">
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="span3 logo">
+                    <a href="./index.html">REAL<span>PROS</span></a>
+                </div>
+
+                <nav id="menu" class="pull-right">
+                    <ul>
+                        <li class="current"><a href="./index.html">Home</a>
+                            <ul>
+                                <li><a href="./index.html">Home layout 1</a></li>
+                                <li><a href="./index2.html">Home layout 2</a></li>
+                                <li class="last"><a href="./index3.html">Home layout 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./about.html">Pages</a>
+                            <ul>
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="./pricing.html">Pricing Tables</a></li>
+                                <li><a href="./404.html">404 Not Found</a></li>
+                                <li><a href="./fullwidth.html">Full Width</a></li>
+                                <li class="last"><a href="./services.html">Our Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./portfolio2.html">Portfolio</a>
+                            <ul>
+                                <li><a href="./portfolio2.html">Portfolio 2 col</a>
+                                    <ul>
+                                        <li><a href="./portfolio2.html">Portfolio 2 Columns</a></li>
+                                        <li class="last"><a href="./portfolio2ex.html">Portfolio 2 Columns Extended</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./portfolio3.html">Portfolio 3 col</a>
+                                    <ul>
+                                        <li><a href="./portfolio3.html">Portfolio 3 Columns</a></li>
+                                        <li class="last"><a href="./portfolio3ex.html">Portfolio 3 Columns Extended</a></li>
+                                    </ul>
+                                </li>
+                                <li class="last"><a href="./portfolio4.html">Portfolio 4 col</a>
+                                    <ul>
+                                        <li><a href="./portfolio4.html">Portfolio 4 Columns</a></li>
+                                        <li class="last"><a href="./portfolio4ex.html">Portfolio 4 Columns Extended</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Blog</a>
+                            <ul>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li class="last"><a href="./blog-single.html">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </header>
+<!--container-->
+<section id="container">
+    <div class="breadcrumbs about">
+     <div class="container">
+         <h2>About Us</h2>
+         <p>Lorem ipsum dolor sit amet</p>
+     </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <section class="span12" id="">
+                <div class="row">
+                    <hr class="invisible">
+                <div class="divider"><h3>MEET <span>OUR</span> TEAM</h3></div>
+                    <hr class="invisible">
+                </div>
+                <div class="row">
+                    <div class="span3">
+                        <div class="thumbnail">
+                            <img class="img-circle" src="images/staff1.jpg" alt="">
+
+                            <div class="caption">
+                                <h4>User Friendly</h4>
+                                    <span class="personel-social">
+                                        <i class="icon-facebook-sign"></i>
+                                        <i class="icon-twitter-sign"></i>
+                                        <i class="icon-pinterest-sign"></i>
+                                        <i class="icon-phone-sign"></i>
+                                    </span>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non.</p>
+
+                                <p><a href="#" class="btn btn-inverse white-shadow">Action</a> <a href="#"
+                                                                                                 class="btn white-shadow">Action</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="thumbnail">
+                            <img class="img-circle" src="images/staff2.jpg" alt="">
+
+                            <div class="caption">
+                                <h4>User Friendly</h4>
+                                    <span class="personel-social">
+                                        <i class="icon-facebook-sign"></i>
+                                        <i class="icon-twitter-sign"></i>
+                                        <i class="icon-pinterest-sign"></i>
+                                        <i class="icon-phone-sign"></i>
+                                    </span>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non.</p>
+
+                                <p><a href="#" class="btn btn-inverse white-shadow">Action</a> <a href="#"
+                                                                                                 class="btn white-shadow">Action</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="thumbnail">
+                            <img class="img-circle" src="images/staff4.jpg" alt="">
+
+
+                            <div class="caption">
+
+                                <h4>Easy to Update</h4>
+                                     <span class="personel-social">
+                                        <i class="icon-facebook-sign"></i>
+                                        <i class="icon-twitter-sign"></i>
+                                        <i class="icon-pinterest-sign"></i>
+                                        <i class="icon-phone-sign"></i>
+                                    </span>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non.</p>
+
+                                <p><a href="#" class="btn btn-inverse white-shadow">Action</a> <a href="#"
+                                                                                                 class="btn white-shadow">Action</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="thumbnail">
+
+                            <img class="img-circle" src="images/staff3.jpg" alt="">
+
+                            <div class="caption">
+
+                                <h4>Customizable</h4>
+                                     <span class="personel-social">
+                                        <i class="icon-facebook-sign"></i>
+                                        <i class="icon-twitter-sign"></i>
+                                        <i class="icon-pinterest-sign"></i>
+                                        <i class="icon-phone-sign"></i>
+                                    </span>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non.</p>
+
+                                <p><a href="#" class="btn btn-inverse white-shadow">Buy Now</a> <a href="#"
+                                                                                                  class="btn white-shadow">See
+                                    details</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                        <hr class="invisible">
+                        <div class="divider"><h3>WHO <span>WE</span> ARE</h3></div>
+                        <hr class="invisible">
+                    <div class="span12">
+                                               <p>Duo probo dicunt efficiendi in, cu vim graecis invidunt, nemore patrioque pri id. Mei aliquip
+                            menandri ea. Ex pri dictas petentium constituto, cum cu facilis blandit. Dicat summo duo ea,
+                            ex sed assum delicatissimi. Has pertinax pericula accommodare ei, diam facer deterruisset
+                            eum et. </p>
+                        <blockquote>
+                            <p>Est audiam urbanitas omittantur an, eum suas tota delectus an. Cu pro graece aliquando
+                                abhorreant. An usu sensibus disputationi consectetuer. His ridens tamquam prodesset
+                                id.</p>
+                            <small>Something Important</small>
+                        </blockquote>
+                    </div>
+                </div>
+                </section>
+        </div>
+        <div class="row">
+            <div class="span6">
+                <div class="aboutus">
+                    <img class="alignleft" alt="img" src="images/staff1.jpg">
+                    <h3>Marta Spenser</h3>
+                    <h4>Chief executive officer</h4>
+                    <p>Integer lacinia tristique nulla a mattis. Proin fringilla turpis sit amet nunc
+                        blandit vehicula. </p>
+                    <p>Nulla Integer lacinia tristique nulla a mattis. Proin fringilla turpis sit amet nunc
+                        blandit vehicula.Integer lacinia tristique nulla a mattis. Proin fringilla turpis sit amet nunc
+                        blandit vehicula. Nulla quis Integer lacinia tristique nulla a mattis. Proin fringilla turpis sit amet. </p>
+                </div>
+            </div>
+
+            <div class="span6">
+                <h3>My Skills</h3>
+                <h4>What I M Best</h4>
+                <div class="progress progress-striped active">
+                    <div style="width: 65%;" class="bar"><span>Html 89%</span></div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div style="width: 50%;" class="bar"><span>Webdesign 93%</span></div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div style="width: 70%;" class="bar"><span>Typography 75%</span></div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div style="width: 45%;" class="bar"><span>Graphic Design 96%</span></div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div style="width: 59%;" class="bar"><span>3D Modelling 66%</span></div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div style="width: 68%;" class="bar"><span>PHP 68%</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer menu-->
+<section id="footer-menu">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <ul>
+                    <li><i class="icon-twitter"></i></li>
+                    <li><i class="icon-facebook"></i></li>
+                    <li><i class="icon-pinterest"></i></li>
+                    <li><i class="icon-google-plus"></i></li>
+                    <li><i class="icon-linkedin"></i></li>
+                    <li><i class="icon-github"></i></li>
+                </ul>
+            </div>
+            <p class="span6"><span class="pull-right">Call Us: +1 800 11 22 333</span></p>
+        </div>
+    </div>
+</section>
+</div>
+<footer>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4 logo">
+                <a href="./index.html">REAL<span>PROS</span></a>
+                <p>Lorem ipsum dolor sit amet qui qunta negat omnia dat.</br>
+                    Seitan aliquip quis cardigan american apparel.</br>
+                    © Copyright 2013
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
